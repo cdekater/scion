@@ -76,7 +76,7 @@ The following sections explain the required tasks, one section per task.
 OS Setup
 ........
 
-   - Set up the host file
+- Set up the host file
 
 The host file (*/etc/hosts*) will need to be updated with the IP addresses of 5 VMs. This will need to be updated on scion01-scion05. Replace the IP addresses with the assigned IP addresses for the VMs deployed.
 
@@ -84,7 +84,7 @@ Set this up on scion01-scion05.
 
 .. code-block::
 
-# additions to /etc/hosts
+   # additions to /etc/hosts
    10.0.1.1 scion01
    10.0.1.2 scion02
    10.0.1.3 scion03
@@ -92,13 +92,13 @@ Set this up on scion01-scion05.
    10.0.1.5 scion05
 
 
-   - Create required directories.
+- Create required directories.
 
 These directories are required to store the certificates, keys, and database files.
 
 Repeat these commands on scion01-scion05.
 
-     .. code-block::
+         .. code-block::
 
         mkdir -p /etc/scion/certs
         mkdir -p /etc/scion/crypto/as
